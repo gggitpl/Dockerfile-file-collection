@@ -3,10 +3,13 @@ FROM alpine
 MAINTAINER gggitpl <960432397@qq.com>
 
 RUN apk add --no-cache aria2 \
+&& mkdir /download
+
+COPY aria2.conf /
 
 WORKDIR /
 
-VOLUME []
+VOLUME /download
 
 EXPOSE 6800
 
