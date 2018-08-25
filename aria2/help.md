@@ -1,5 +1,2 @@
-- 在本机新建一个`aria2`目录
-- 使用`wget`命令下载`aria2.conf` `Dockerfile`文件到`aria2`目录下
-- 进入`aria2`目录,执行`docker build -t aria2 .`构建镜像
-- `df -h`命令查看U盘所有挂载的目录
-- 执行` docker run --name aria2 -p 6800:6800 -v /media/KINGSTON:/download -d aria2` 运行容器
+- `docker build -t aria2 .`
+- `docker run --name aria2 -p 6800:6800 -v /media/KINGSTON:/download -d aria2`
