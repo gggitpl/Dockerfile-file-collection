@@ -3,9 +3,10 @@ FROM alpine
 MAINTAINER gggitpl <960432397@qq.com>
 
 RUN apk add --no-cache aria2 \
-&& mkdir /download
+&& mkdir /download \
 
 COPY aria2.conf /
+COPY aria2.session /
 
 WORKDIR /
 
