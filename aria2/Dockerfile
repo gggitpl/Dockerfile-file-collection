@@ -10,7 +10,7 @@ COPY aria2.session /
 
 WORKDIR /
 
-VOLUME /download
+VOLUME ["/download", "/var/log/"]
 
 EXPOSE 6800
 

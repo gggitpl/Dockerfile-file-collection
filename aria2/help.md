@@ -1,2 +1,2 @@
 - `docker build -t aria2 .`
-- `docker run --name aria2 -p 6800:6800 -v /media/KINGSTON:/download -d aria2`
+- `docker run --name aria2 -p 6800:6800 -v /media/KINGSTON:/download -v /var/log:/var/log -d aria2`
