@@ -7,6 +7,7 @@ MAINTAINER gggitpl <960432397@qq.com>
 RUN apk add --no-cache nginx \
 && wget https://github.com/mayswind/AriaNg/releases/download/$VERSION/aria-ng-$VERSION.zip \
 && mkdir html \
+&7 mkdir -p /var/run/nginx \
 && unzip -d /html /aria-ng-$VERSION.zip \
 && rm -r /aria-ng*
 
