@@ -1,7 +1,6 @@
 version: '2'
 services:
   aria2:
-    container_name: aria2
     build: ./aria2
     ports:
       - "6800:6800"
@@ -9,7 +8,6 @@ services:
       - /media/KINGSTON:/download
       - /var/log:/var/log
   aria-ng:
-    container_name: aria-ng
     build: ./aria-ng
     ports:
       - "801:80"
