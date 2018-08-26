@@ -13,6 +13,8 @@ RUN apk add --no-cache nginx \
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
+WORKDIR /
+
 EXPOSE 80 443
 
 CMD ["nginx", "-g", "daemon off;"]
